@@ -31,8 +31,6 @@ body {
         background-color: #222;
         color: #fff;
         padding: 2rem;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
     }
     &__buttons {
         font-size: 1.6rem;
@@ -47,41 +45,41 @@ body {
     }
     &__buttons > button {
         padding: 2rem;
+        border: 1px solid;
     }
-    .zero {
+    [data-key="0"] {
         grid-area: zero;
     }
-    .one {
+    [data-key="1"] {
         grid-area: one;
     }
-    .two {
-        grid-area: two
+    [data-key="2"] {
+        grid-area: two;
     }
-    .three {
-        grid-area: three
+    [data-key="3"] {
+        grid-area: three;
     }
-    .four {
-        grid-area: four
+    [data-key="4"] {
+        grid-area: four;
     }
-    .five {
-        grid-area: five
+    [data-key="5"] {
+        grid-area: five;
     }
-    .six {
+    [data-key="6"] {
         grid-area: six;
     }
-    .seven {
+    [data-key="7"] {
         grid-area: seven;
     }
-    .eight {
+    [data-key="8"] {
         grid-area: eight;
     }
-    .nine {
+    [data-key="9"] {
         grid-area: nine;
     }
     .equal {
         grid-area: equal;
         background-color: orange;
-        color: #fff;
     }
     .decimal {
         grid-area: decimal;
@@ -91,4 +89,6 @@ body {
     }
 }
 
-
+[data-state="selected"] {
+    background: rgb(184, 184, 184);
+}
