@@ -8,36 +8,38 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+
 <main>
 
 <div class="container">
 
 <div class="calculator">
-<div class="calculator__screen">0</div>
-<div class="calculator__buttons">
-    <button class="operator plus">+</button>
-    <button class="operator minus">-</button>
-    <button class="operator times">&times;</button>
-    <button class="operator divide">÷</button>
-    <button class="number one">1</button>
-    <button class="number two">2</button>
-    <button class="number three">3</button>
-    <button class="number four">4</button>
-    <button class="number five">5</button>
-    <button class="number six">6</button>
-    <button class="number seven">7</button>
-    <button class="number eight">8</button>
-    <button class="number nine">9</button>
-    <button class="number zero">0</button>
-    <button class="number decimal">.</button>
-    <button class="number clear">AC</button>
-    <button class="equal">=</button>
-</div>
+    <div class="calculator__screen">0</div>
+    <div class="calculator__buttons">
+        <button data-key="plus" data-type="operator">+</button>
+        <button data-key="minus" data-type="operator">-</button>
+        <button data-key="times" data-type="operator">&times;</button>
+        <button data-key="divide" data-type="operator">÷</button>
+        <button data-key="1" data-type="number">1</button>
+        <button data-key="2" data-type="number">2</button>
+        <button data-key="3" data-type="number">3</button>
+        <button data-key="4" data-type="number">4</button>
+        <button data-key="5" data-type="number">5</button>
+        <button data-key="6" data-type="number">6</button>
+        <button data-key="7" data-type="number">7</button>
+        <button data-key="8" data-type="number">8</button>
+        <button data-key="9" data-type="number">9</button>
+        <button data-key="0" data-type="number">0</button>
+        <button class="decimal" data-type="number">.</button>
+        <button class="clear" data-type="clear">C</button>
+        <button class="equal" data-type="equal">=</button>
+    </div>
 </div>
 
 </div>
 
 </main>
+
 <script src="/js/app.js"></script>
 </body>
 </html>
